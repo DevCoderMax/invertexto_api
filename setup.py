@@ -6,7 +6,7 @@ def parse_requirements(filename):
 
 setup(
     name="invertexto_api",  
-    version="0.1.0",        
+    version="0.1.1",        
     description="Uma API não oficial para invertexto",  
     author="Gleyson Carvalho",      
     author_email="gleysondonascimentocarvalho@gmail.com",  
