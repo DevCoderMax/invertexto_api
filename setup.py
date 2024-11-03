@@ -14,9 +14,8 @@ setup(
     url="https://github.com/DevCoderMax/invertexto_api",  
     packages=find_packages(),  
     install_requires=[         
-        "fastapi",
-        "uvicorn",
-        "pydantic",
+        "requests",
+        "bs4",
         *parse_requirements('requirements.txt')
     ],
     classifiers=[             
