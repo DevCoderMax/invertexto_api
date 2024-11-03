@@ -10,6 +10,11 @@ This section outlines the planned and ongoing tasks for the API.
 
 ## Exemplos de Uso
 
+#instalação da biblioteca
+```python
+pip install git+https://github.com/DevCoderMax/invertexto_api.git
+```
+#Uso
 ```python
 # cria um notepad
 from invertexto_api.modules import Notepad
