@@ -12,7 +12,7 @@ setup(
     author="Gleyson Carvalho",      
     author_email="gleysondonascimentocarvalho@gmail.com",  
     url="https://github.com/DevCoderMax/invertexto_api",  
-    packages=find_packages(include=['app', 'app.*']),
+    packages=find_packages(),
     install_requires=[         
         "requests",
         "bs4",
