@@ -6,24 +6,24 @@ def parse_requirements(filename):
 
 
 setup(
-    name="invertexto_api",  # Nome do pacote
-    version="0.1.0",        # Versão do pacote
-    description="Uma API não oficial para invertexto",  # Breve descrição do projeto
+    name="invertexto_api",  
+    version="0.1.0",        
+    description="Uma API não oficial para invertexto",  
     author="Gleyson Carvalho",      
     author_email="gleysondonascimentocarvalho@gmail.com",  
     url="https://github.com/DevCoderMax/invertexto_api",  
     packages=find_packages(),  
-    install_requires=[         # Dependências do seu projeto
+    install_requires=[         
         "fastapi",
         "uvicorn",
         "pydantic",
         *parse_requirements('requirements.txt')
     ],
-    classifiers=[             # Classificadores para o projeto
+    classifiers=[             
         "Programming Language :: Python :: 3",
         "Framework :: FastAPI",
-        "License :: OSI Approved :: MIT License",  # ou outra licença que você escolher
+        "License :: OSI Approved :: MIT License",  
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.10',  # Versão mínima do Python
+    python_requires='>=3.10', 
 )
