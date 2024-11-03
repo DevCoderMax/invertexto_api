@@ -1,1 +1,0 @@
-from app.modules.notepad import Notepad 
