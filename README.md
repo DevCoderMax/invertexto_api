@@ -12,6 +12,7 @@ This section outlines the planned and ongoing tasks for the API.
 
 ```python
 # cria um notepad
+from invertexto_api.modules import Notepad
 notepad = Notepad("max")
 print(notepad.create())
 pega o conteudo do notepad
