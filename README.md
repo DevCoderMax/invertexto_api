@@ -4,4 +4,4 @@ Invertexto API (Unofficial)
 
 This section outlines the planned and ongoing tasks for the API.
 
-- [x] **Notebook Creation**
+- [ ] **Notebook Creation**
