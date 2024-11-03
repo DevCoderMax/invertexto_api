@@ -1,1 +1,1 @@
-from app.modules.notepad import Notepad 
+from .app.modules.notepad import Notepad
