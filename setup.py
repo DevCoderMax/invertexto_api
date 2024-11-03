@@ -12,7 +12,7 @@ setup(
     author_email="gleysondonascimentocarvalho@gmail.com",  
     url="https://github.com/DevCoderMax/invertexto_api",  
     packages=find_packages(),
-    install_requires=parse_requirements('requirements.txt'),  # Simplificado aqui
+    install_requires=parse_requirements('requirements.txt'),  
     classifiers=[             
         "Programming Language :: Python :: 3",
         "Framework :: FastAPI",

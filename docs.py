@@ -1,5 +1,5 @@
 
-from .invertexto_api.modules.notepad import Notepad
+from invertexto_api.modules.notepad import Notepad
 
 #exemplo de uso
 
