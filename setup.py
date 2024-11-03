@@ -4,7 +4,6 @@ def parse_requirements(filename):
     with open(filename, 'r') as f:
         return [line.strip() for line in f if line and not line.startswith('#')]
 
-
 setup(
     name="invertexto_api",  
     version="0.1.0",        
@@ -13,11 +12,7 @@ setup(
     author_email="gleysondonascimentocarvalho@gmail.com",  
     url="https://github.com/DevCoderMax/invertexto_api",  
     packages=find_packages(),
-    install_requires=[         
-        "requests",
-        "bs4",
-        *parse_requirements('requirements.txt')
-    ],
+    install_requires=parse_requirements('requirements.txt'),  # Simplificado aqui
     classifiers=[             
         "Programming Language :: Python :: 3",
         "Framework :: FastAPI",
