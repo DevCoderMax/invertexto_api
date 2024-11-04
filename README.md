@@ -30,12 +30,15 @@ pip install git+https://github.com/DevCoderMax/invertexto_api.git
 ```python
 # cria um notepad
 from invertexto_api.modules import Notepad
+
 notepad = Notepad("max")
 print(notepad.create())
-pega o conteudo do notepad
+
+# pega o conteudo do notepad
 notepad = Notepad("max")
 print(notepad.get_content())
-seta o conteudo do notepad
+
+# seta/edita o conteudo do notepad
 notepad = Notepad("max")
 print(notepad.set_content("testing", 'token')) 
 ```
