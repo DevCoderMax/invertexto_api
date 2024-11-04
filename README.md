@@ -4,10 +4,22 @@ Invertexto API (Unofficial)
 
 This section outlines the planned and ongoing tasks for the API.
 
+**Notepad**
 - [x] **Notepad Creation**
 - [x] **Get Content**
 - [x] **Set Content**
+- [ ] **Support a senhas dos Notepads**
 
+**Localizar IP**
+- [ ] **Get My IP**
+- [ ] **Get IP Info**
+
+**Temp Mail Service**
+- [ ] **Criar Email aleatório**
+- [ ] **Criar Email Peronalizado**
+- [ ] **Get Emails**
+
+      
 ## Exemplos de Uso
 
 #instalação da biblioteca
