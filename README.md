@@ -34,7 +34,7 @@ from invertexto_api.modules import Notepad
 notepad = Notepad("max")
 print(notepad.create())
 
-# pega o conteudo do notepad
+# pega o conteudo do notepad incluido token pra edição
 notepad = Notepad("max")
 print(notepad.get_content())
 
