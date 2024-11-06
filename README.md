@@ -40,6 +40,15 @@ print(notepad.get_content())
 
 # seta/edita o conteudo do notepad
 notepad = Notepad("max")
-print(notepad.set_content("testing", 'token')) 
+print(notepad.set_content("testing", 'token'))
+
+# IP
+
+##Captura o meu ip atual
+from invertexto_api.modules import ip
+
+meu_ip = ip.my_ip()
+print(meu_ip)
+
 ```
 

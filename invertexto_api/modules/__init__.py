@@ -1,3 +1,2 @@
 from .notepad import Notepad
-
-__all__ = ['Notepad']
+from .IP import ip

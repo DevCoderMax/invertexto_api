@@ -1,3 +1,2 @@
 from .modules.notepad import Notepad
-
-__all__ = ['Notepad'] 
+from .modules.IP import ip
