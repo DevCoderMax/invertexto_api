@@ -11,8 +11,8 @@ This section outlines the planned and ongoing tasks for the API.
 - [ ] **Support a senhas dos Notepads**
 
 **IP**
-- [ ] **Get My IP**
-- [ ] **Get IP Info**
+- [x] **Get My IP**
+- [x] **Get Local IP Info**
 
 **Temp Mail Service**
 - [ ] **Criar Email aleatório**
