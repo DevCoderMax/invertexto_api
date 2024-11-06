@@ -10,7 +10,7 @@ This section outlines the planned and ongoing tasks for the API.
 - [x] **Set Content**
 - [ ] **Support a senhas dos Notepads**
 
-**Localizar IP**
+**IP**
 - [ ] **Get My IP**
 - [ ] **Get IP Info**
 
