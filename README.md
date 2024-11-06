@@ -50,5 +50,10 @@ from invertexto_api.modules import ip
 meu_ip = ip.my_ip()
 print(meu_ip)
 
+# Localização de um ip
+
+ip_test = ip('88.98.134.132')
+print(ip_test.LocalIP())
+
 ```
 
