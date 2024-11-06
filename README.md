@@ -8,15 +8,15 @@ This section outlines the planned and ongoing tasks for the API.
 - [x] **Notepad Creation**
 - [x] **Get Content**
 - [x] **Set Content**
-- [ ] **Support a senhas dos Notepads**
+- [ ] **Support passwords in Notepads**
 
 **IP**
 - [x] **Get My IP**
 - [x] **Get Local IP Info**
 
 **Temp Mail Service**
-- [ ] **Criar Email aleatório**
-- [ ] **Criar Email Peronalizado**
+- [ ] **Create Random Email**
+- [ ] **Create Custom Email**
 - [ ] **Get Emails**
 
       
