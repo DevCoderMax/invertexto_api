@@ -36,4 +36,3 @@ class ip:
 
         return response.json()
     
-
