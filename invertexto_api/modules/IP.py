@@ -1,38 +1,44 @@
 import requests
 from bs4 import BeautifulSoup
+from typing import Dict, Any
 
-class ip:
+class IP:
     def __init__(self, ip: str):
-        self.ip = ip
+        self._ip = ip
+        self._base_url = "https://www.invertexto.com"
+        self._api_url = "https://api.invertexto.com/v1/geoip"
     
-    def my_ip():
-        url = "https://www.invertexto.com/meu-ip"
-        response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
-        ip = soup.find('span', class_='meu-ip').text
-        return ip
+    @staticmethod
+    def get_my_ip() -> str:
+        try:
+            response = requests.get("https://www.invertexto.com/meu-ip")
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, 'html.parser')
+            return soup.find('span', class_='meu-ip').text.strip()
+        except Exception as e:
+            raise Exception(f"Erro ao obter IP: {str(e)}")
     
-    def LocalIP(self):
-
-        # capturando token
-
-        url_token = "https://www.invertexto.com/localizar-ip"
-
-        # capturando token
-        response = requests.get(url_token)
-
-        soup = BeautifulSoup(response.text, 'html.parser')
-        token = soup.find('script', string=lambda t: t and 'token=' in t).string.split('token=')[1].split("'")[0]
-
-        # buscando ip indicado
-
-        url_api = "https://api.invertexto.com/v1/geoip/"
-        ip = self.ip
-        token_url = "?token="
-        
-        full_url = url_api+ip+token_url+token
-
-        response = requests.get(full_url)
-
-        return response.json()
+    def LocalIP(self) -> Dict[str, Any]:
+        try:
+            # Obtém o token
+            response = requests.get(f"{self._base_url}/localizar-ip")
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.text, 'html.parser')
+            script = soup.find('script', string=lambda t: t and 'token=' in t)
+            if not script:
+                raise ValueError("Token não encontrado")
+                
+            token = script.string.split('token=')[1].split("'")[0]
+            
+            # Faz a requisição da API
+            response = requests.get(
+                f"{self._api_url}/{self._ip}",
+                params={"token": token}
+            )
+            response.raise_for_status()
+            
+            return response.json()
+        except Exception as e:
+            raise Exception(f"Erro ao obter informações do IP: {str(e)}")
     
