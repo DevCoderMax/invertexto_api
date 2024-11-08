@@ -9,7 +9,7 @@ class IP:
         self._api_url = "https://api.invertexto.com/v1/geoip"
     
     @staticmethod
-    def get_my_ip() -> str:
+    def my_ip() -> str:
         try:
             response = requests.get("https://www.invertexto.com/meu-ip")
             response.raise_for_status()
@@ -41,4 +41,3 @@ class IP:
             return response.json()
         except Exception as e:
             raise Exception(f"Erro ao obter informações do IP: {str(e)}")
-    
