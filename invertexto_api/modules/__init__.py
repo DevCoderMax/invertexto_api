@@ -1,2 +1,2 @@
 from .notepad import Notepad
-from .IP import ip
+from .IP import IP

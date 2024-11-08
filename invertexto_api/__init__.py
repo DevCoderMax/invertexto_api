@@ -1,2 +1,2 @@
 from .modules.notepad import Notepad
-from .modules.IP import ip
+from .modules.IP import IP

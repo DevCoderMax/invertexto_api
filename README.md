@@ -47,7 +47,7 @@ print(notepad.set_content("testing", 'token'))
 ##Captura o meu ip atual
 from invertexto_api.modules import ip
 
-meu_ip = ip.my_ip()
+meu_ip = IP.my_ip()
 print(meu_ip)
 
 # Localização de um ip
