@@ -52,7 +52,7 @@ print(meu_ip)
 
 # Localização de um ip
 
-ip_test = ip('88.98.134.132')
+ip_test = IP('88.98.134.132')
 print(ip_test.LocalIP())
 
 ```
