@@ -13,7 +13,7 @@ class Email:
         email = soup.find(id='email-input') 
         return email.get('value') 
 
-    def create_email(username):
+    def create_custom_email(username):
     
         url = "https://www.invertexto.com/gerador-email-temporario?email="
         end_url = "@uorak.com"
