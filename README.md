@@ -14,7 +14,7 @@ This section outlines the planned and ongoing tasks for the API.
 - [x] **Get My IP**
 - [x] **Get Local IP Info**
 - [ ] **Get info of domain**
-- [ ] 
+      
 **Temp Mail Service**
 - [x] **Create Random Email**
 - [x] **Create Custom Email**
