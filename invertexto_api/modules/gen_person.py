@@ -7,6 +7,7 @@ class person:
     def __init__(self, gender, nationality):
         self._genero = gender
         self._pais = nationality
+        
     def generate_person():
         url = requests.get('https://www.invertexto.com/gerador-de-pessoas').content
         soup = BeautifulSoup(url, 'html.parser')
