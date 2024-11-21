@@ -4,9 +4,11 @@ from typing import Dict, Any
 
 
 class person:
-    def __init__(self, gender= None, nationality= None):
+    def __init__(self, gender=None, nationality= None):
         self._gender = gender
         self._nationality = nationality
+
+    def generate_person():
         url = requests.get('https://www.invertexto.com/gerador-de-pessoas').content
         soup = BeautifulSoup(url, 'html.parser')
         person = {
