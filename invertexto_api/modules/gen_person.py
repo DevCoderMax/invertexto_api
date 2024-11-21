@@ -5,8 +5,8 @@ from typing import Dict, Any
 
 class person:
     def __init__(self, gender, nationality):
-        self._genero = gender
-        self._pais = nationality
+        self._gender = gender
+        self._nationality = nationality
         
     def generate_person():
         url = requests.get('https://www.invertexto.com/gerador-de-pessoas').content
