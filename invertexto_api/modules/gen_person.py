@@ -4,11 +4,27 @@ from typing import Dict, Any
 
 
 class person:
-    def __init__(self, gender=None, nationality= None):
+    def __init__(self, gender=None, pais= None):
         self._gender = gender
-        self._nationality = nationality
+        self._nationality = pais
+        self.base_url = 'https://invertexto.com/gerador-de-pessoas'
 
-    def generate_person():
+        payload = {}
+        if gender:
+            if gender.lower() not in ['masculino', 'feminino']:
+                raise ValueError("O gênero deve ser 'masculino' ou 'feminino'.")
+            payload["gender"] = "male" if gender.lower() == "masculino" else "female"
+
+        if pais:
+            if pais.lower() not in ['brasil', 'usa']:
+                raise ValueError("O país deve ser 'brasil' ou 'usa'.")
+            payload["country"] = "br" if pais.lower() == "brasil" else "usa"
+
+        response = requests.get(self.base_url, params=payload)
+        return response
+
+
+    def generate_person(self):
         url = requests.get('https://www.invertexto.com/gerador-de-pessoas').content
         soup = BeautifulSoup(url, 'html.parser')
         person = {
