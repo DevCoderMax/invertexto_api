@@ -8,6 +8,8 @@ class person:
         self.base_url = 'https://invertexto.com/gerador-de-pessoas'
 
     def generate_person(self, gender=None, pais= None):
+        self._gender = gender
+        self.pais = pais
         payload = {}
         if gender:
             if gender.lower() not in ['masculino', 'feminino']:
